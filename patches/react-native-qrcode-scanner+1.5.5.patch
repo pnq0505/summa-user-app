@@ -1,0 +1,23 @@
+diff --git a/node_modules/react-native-qrcode-scanner/index.js b/node_modules/react-native-qrcode-scanner/index.js
+index b9bb661..445f56a 100644
+--- a/node_modules/react-native-qrcode-scanner/index.js
++++ b/node_modules/react-native-qrcode-scanner/index.js
+@@ -346,7 +346,7 @@ export default class QRCodeScanner extends Component {
+ 
+   render() {
+     return (
+-      <View style={[styles.mainContainer, this.props.containerStyle]}>
++      <View style={[styles.mainContainer, this.props.containerStyle]} onLayout={this.props.onLayout}>
+         <View style={[styles.infoView, this.props.topViewStyle]}>
+           {this._renderTopContent()}
+         </View>
+@@ -375,8 +375,7 @@ const styles = StyleSheet.create({
+     alignItems: 'center',
+     justifyContent: 'center',
+     backgroundColor: 'transparent',
+-    height: Dimensions.get('window').width,
+-    width: Dimensions.get('window').width,
++    height: '100%',
+   },
+ 
+   rectangleContainer: {
