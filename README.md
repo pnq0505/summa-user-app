@@ -1,4 +1,4 @@
-# Summa Installer App
+# Summa User App
 
 ## Installation
 
@@ -121,8 +121,3 @@ Changed packages in node_modules:
 Follow this [topic](https://github.com/facebook/react-native/issues/33557#issuecomment-1100919812) to fix the error of the RNCamera.
 
 (This issue have been fixed, just read for more information)
-
-### Connect to the Assembly application to call findDriver API when using the local server
-
-1. Setup the [Platform](https://gitlab.com/c7607/summasystems/platform) project on the local
-2. Following the comments in [this ticket](https://summa-systems.atlassian.net/browse/MOB-90) to setup the .env file to connect to the Assembly server
