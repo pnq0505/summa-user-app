@@ -8,7 +8,7 @@
     "start": "react-native start",
     "test": "jest --coverage",
     "lint": "eslint .",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package && react-native setup-ios-permissions && pod-install"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.17.11",
@@ -38,6 +38,7 @@
     "react-native-dropdown-picker": "^5.4.4",
     "react-native-fs": "^2.20.0",
     "react-native-modal": "^13.0.1",
+    "react-native-permissions": "^3.7.3",
     "react-native-progress": "^5.0.0",
     "react-native-qrcode-scanner": "^1.5.5",
     "react-native-reanimated": "^3.0.0",
@@ -47,7 +48,9 @@
     "react-redux": "^8.0.5",
     "redux-persist": "^6.0.0",
     "three": "0.131.1"
-  },
+  },"reactNativePermissionsIOS": [
+    "Camera"
+  ],
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "@babel/runtime": "^7.20.0",
@@ -63,6 +66,7 @@
     "prettier": "^2.4.1",
     "react-devtools": "^4.22.0",
     "react-test-renderer": "18.2.0",
-    "ts-jest": "^29.0.5"
+    "ts-jest": "^29.0.5",
+    "pod-install": "0.1.38"
   }
 }
